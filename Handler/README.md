@@ -1,1 +1,1 @@
-![](./images/handler.svg)
+![](./images/handler.png)
