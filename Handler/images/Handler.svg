@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 -92 1395 1978" width="1395pt" height="1978pt" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <metadata> Produced by OmniGraffle 7.3 
+    <dc:date>2017-05-04 03:13:43 +0000</dc:date>
+  </metadata>
+  <defs>
+    <font-face font-family="Helvetica Neue" font-size="16" panose-1="2 0 5 3 0 0 0 2 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="951.9958" descent="-212.99744" font-weight="500">
+      <font-face-src>
+        <font-face-name name="HelveticaNeue"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="black">
+      <g>
+        <path d="M 8 0 L 0 -3 L 0 3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="PingFang SC" font-size="11" panose-1="2 11 4 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-150" underline-thickness="58" slope="0" x-height="600" cap-height="860" ascent="1060.0021" descent="-340.0007" font-weight="500">
+      <font-face-src>
+        <font-face-name name="PingFangSC-Regular"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="PingFang SC" font-size="16" panose-1="2 11 4 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-150" underline-thickness="58" slope="0" x-height="600" cap-height="860" ascent="1060.0021" descent="-340.0007" font-weight="500">
+      <font-face-src>
+        <font-face-name name="PingFangSC-Regular"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Helvetica Neue" font-size="12" panose-1="2 0 5 3 0 0 0 9 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="-1e3" x-height="517" cap-height="714" ascent="957.0007" descent="-212.99744" font-style="italic" font-weight="500">
+      <font-face-src>
+        <font-face-name name="HelveticaNeue-Italic"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker_2" viewBox="-1 -3 6 6" markerWidth="6" markerHeight="6" color="#aaa">
+      <g>
+        <path d="M 3.7333333 0 L 0 -1.4 L 0 1.4 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="PingFang SC" font-size="22" panose-1="2 11 8 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-150" underline-thickness="80" slope="0" x-height="600" cap-height="860" ascent="1060.0021" descent="-340.0007" font-weight="bold">
+      <font-face-src>
+        <font-face-name name="PingFangSC-Semibold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="PingFang SC" font-size="13" panose-1="2 11 4 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-150" underline-thickness="58" slope="0" x-height="600" cap-height="860" ascent="1060.0021" descent="-340.0007" font-weight="500">
+      <font-face-src>
+        <font-face-name name="PingFangSC-Regular"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="PingFang SC" font-size="14" panose-1="2 11 4 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-150" underline-thickness="58" slope="0" x-height="600" cap-height="860" ascent="1060.0021" descent="-340.0007" font-weight="500">
+      <font-face-src>
+        <font-face-name name="PingFangSC-Regular"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <g stroke="none" stroke-opacity="1" stroke-dasharray="none" fill="none" fill-opacity="1">
+    <title>版面 1</title>
+    <rect fill="white" width="1395" height="1978"/>
+    <g>
+      <title>图层 1</title>
+      <path d="M 49.5 97 L 228.5 97 C 232.91828 97 236.5 100.58172 236.5 105 L 236.5 147 C 236.5 151.41828 232.91828 155 228.5 155 L 49.5 155 C 45.08172 155 41.5 151.41828 41.5 147 L 41.5 105 C 41.5 100.58172 45.08172 97 49.5 97 Z" fill="blue"/>
+      <text transform="translate(46.5 116.776)" fill="white">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" fill="white" x="19.596" y="15" textLength="145.808">ActivityThread#main</tspan>
+      </text>
+      <path d="M 41.75 233.5 L 236.25 233.5 C 240.66828 233.5 244.25 237.08172 244.25 241.5 L 244.25 283.5 C 244.25 287.91828 240.66828 291.5 236.25 291.5 L 41.75 291.5 C 37.33172 291.5 33.75 287.91828 33.75 283.5 L 33.75 241.5 C 33.75 237.08172 37.33172 233.5 41.75 233.5 Z" fill="blue"/>
+      <text transform="translate(38.75 253.276)" fill="white">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" fill="white" x="2.162" y="15" textLength="196.176">Looper.prepareMainLooper</tspan>
+      </text>
+      <path d="M 347.5 161 L 542 161 C 546.4183 161 550 164.58172 550 169 L 550 211 C 550 215.41828 546.4183 219 542 219 L 347.5 219 C 343.08172 219 339.5 215.41828 339.5 211 L 339.5 169 C 339.5 164.58172 343.08172 161 347.5 161 Z" fill="blue"/>
+      <text transform="translate(344.5 180.776)" fill="white">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" fill="white" x="21.882" y="15" textLength="156.736">Looper#prepare(false)</tspan>
+      </text>
+      <path d="M 437 307 L 631.5 307 C 635.9183 307 639.5 310.58172 639.5 315 L 639.5 357 C 639.5 361.41828 635.9183 365 631.5 365 L 437 365 C 432.5817 365 429 361.41828 429 357 L 429 315 C 429 310.58172 432.5817 307 437 307 Z" fill="blue"/>
+      <text transform="translate(434 326.776)" fill="white">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" fill="white" x="3.874" y="15" textLength="192.752">sMainLooper = myLooper()</tspan>
+      </text>
+      <line x1="139" y1="155" x2="139" y2="223.6" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path d="M 612 161 L 828 161 C 832.4183 161 836 164.58172 836 169 L 836 211 C 836 215.41828 832.4183 219 828 219 L 612 219 C 607.5817 219 604 215.41828 604 211 L 604 169 C 604 164.58172 607.5817 161 612 161 Z" fill="blue"/>
+      <text transform="translate(609 180.776)" fill="white">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" fill="white" x="4.928" y="15" textLength="212.144">threadLocal.set(new Looper())</tspan>
+      </text>
+      <path d="M 1017 161.17331 L 1307.5 161.17331 C 1311.9183 161.17331 1315.5 164.75504 1315.5 169.17331 L 1315.5 211.17331 C 1315.5 215.5916 1311.9183 219.17331 1307.5 219.17331 L 1017 219.17331 C 1012.5817 219.17331 1009 215.5916 1009 211.17331 L 1009 169.17331 C 1009 164.75504 1012.5817 161.17331 1017 161.17331 Z" fill="blue"/>
+      <text transform="translate(1014 180.94931)" fill="white">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" fill="white" x="31.418" y="15" textLength="233.664">mQueue = new MessageQueue()</tspan>
+      </text>
+      <path d="M 550 189.86903 L 561.9 189.86903 L 592.1 189.80183 L 594.1 189.80183" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path d="M 836 190.05803 L 847.9 190.05803 L 997.1 190.14457 L 999.1 190.14457" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect x="851.832" y="169.09888" width="133" height="42" fill="white"/>
+      <text transform="translate(856.832 174.09888)" fill="black">
+        <tspan font-family="PingFang SC" font-size="11" font-weight="500" fill="black" x="10.537" y="12" textLength="101.926">Looper的构造方法中</tspan>
+        <tspan font-family="PingFang SC" font-size="11" font-weight="500" fill="black" x=".1805" y="28" textLength="122.639">实例化了MessageQueue</tspan>
+      </text>
+      <path d="M 244.25 247.82498 L 256.15 247.82498 L 400.77985 247.82498 L 400.77985 227.6513" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect x="302.53156" y="231.32498" width="26" height="33" fill="white"/>
+      <text transform="translate(307.53156 236.82498)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" fill="black" x="0" y="17" textLength="16">①</tspan>
+      </text>
+      <path d="M 244.25 272.9233 L 256.15 272.9233 L 534.5 272.9233 L 534.5 291.76784" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect x="302.7144" y="256.4233" width="196" height="33" fill="white"/>
+      <text transform="translate(307.7144 261.9233)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" fill="black" x=".208" y="17" textLength="185.584">② 获取当前线程的Looper</tspan>
+      </text>
+      <text transform="translate(616 104)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" fill="black" x="4.872" y="17" textLength="212.256">将当前线程的Looper（消息循</tspan>
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" fill="black" x="14.296" y="39" textLength="193.408">环器)存放到ThreadLocal中</tspan>
+      </text>
+      <text transform="translate(1099 115)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" fill="black" x="0" y="17" textLength="64">消息队列</tspan>
+      </text>
+      <path d="M 726 307 L 920.5 307 C 924.9183 307 928.5 310.58172 928.5 315 L 928.5 357 C 928.5 361.41828 924.9183 365 920.5 365 L 726 365 C 721.5817 365 718 361.41828 718 357 L 718 315 C 718 310.58172 721.5817 307 726 307 Z" fill="blue"/>
+      <text transform="translate(723 326.776)" fill="white">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" fill="white" x="40.098" y="15" textLength="120.304">threadLocal.get()</tspan>
+      </text>
+      <path d="M 639.5 336.00753 L 651.4 336.00753 L 706.1 336.01314 L 708.1 336.01314" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path d="M 41.75 737 L 236.25 737 C 240.66828 737 244.25 740.5817 244.25 745 L 244.25 787 C 244.25 791.4183 240.66828 795 236.25 795 L 41.75 795 C 37.33172 795 33.75 791.4183 33.75 787 L 33.75 745 C 33.75 740.5817 37.33172 737 41.75 737 Z" fill="blue"/>
+      <text transform="translate(38.75 756.776)" fill="white">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" fill="white" x="56.986" y="15" textLength="86.528">Looper.loop</tspan>
+      </text>
+      <path d="M 139 291.5 L 139 303.4 L 138.9999 725.1 L 138.9999 727.1" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect x="131.49997" y="370.3992" width="15" height="76" fill="white"/>
+      <text transform="translate(136.49997 375.3992)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" fill="black" x=".388" y="17" textLength="4.224">.</tspan>
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" fill="black" x=".388" y="39" textLength="4.224">.</tspan>
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" fill="black" x=".388" y="61" textLength="4.224">.</tspan>
+      </text>
+      <rect x="101.99992" y="629.8374" width="74" height="33" fill="white"/>
+      <text transform="translate(106.99992 635.3374)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" fill="black" x="0" y="17" textLength="64">消息循环</tspan>
+      </text>
+      <path d="M 341 507 L 631.5 507 C 635.9183 507 639.5 510.5817 639.5 515 L 639.5 557 C 639.5 561.4183 635.9183 565 631.5 565 L 341 565 C 336.58172 565 333 561.4183 333 557 L 333 515 C 333 510.5817 336.58172 507 341 507 Z" fill="blue"/>
+      <text transform="translate(338 526.776)" fill="white">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" fill="white" x="57.794" y="15" textLength="180.912">Looper  me = myLooper()</tspan>
+      </text>
+      <path d="M 341 737 L 631.5 737 C 635.9183 737 639.5 740.5817 639.5 745 L 639.5 787 C 639.5 791.4183 635.9183 795 631.5 795 L 341 795 C 336.58172 795 333 791.4183 333 787 L 333 745 C 333 740.5817 336.58172 737 341 737 Z" fill="blue"/>
+      <text transform="translate(338 756.776)" fill="white">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" fill="white" x="14.794" y="15" textLength="266.912">MessageQueue queue = me.mQueue</tspan>
+      </text>
+      <path d="M 243.9445 742.8028 L 255.8445 742.8028 L 269.74212 742.8028 L 269.74212 737.1005 L 269.88307 530.6598 L 322.4607 530.6598" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path d="M 242.5986 766.9665 L 321.1 766.5199 L 323.1 766.5199" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect x="418" y="704" width="106" height="33" fill="white"/>
+      <text transform="translate(423 709.5)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" fill="black" x="0" y="17" textLength="96">获取消息队列</tspan>
+      </text>
+      <rect x="256.7711" y="678.1599" width="26" height="33" fill="white"/>
+      <text transform="translate(261.7711 683.6599)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" fill="black" x="0" y="17" textLength="16">①</tspan>
+      </text>
+      <rect x="268" y="749.5" width="26" height="33" fill="white"/>
+      <text transform="translate(273 755)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" fill="black" x="0" y="17" textLength="16">②</tspan>
+      </text>
+      <path d="M 341 967 L 642 967 C 646.4183 967 650 970.5817 650 975 L 650 1029 C 650 1033.4183 646.4183 1037 642 1037 L 341 1037 C 336.58172 1037 333 1033.4183 333 1029 L 333 975 C 333 970.5817 336.58172 967 341 967 Z" fill="blue"/>
+      <text transform="translate(338 969)" fill="white">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" fill="white" x="47.284" y="17" textLength="36.432">for(;;)</tspan>
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" fill="white" x="83.716" y="17" textLength="176">死循环，循环从消息队列</tspan>
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" fill="white" x="48.308" y="39" textLength="210.384">（MessageQueue）中取消息</tspan>
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" fill="white" x="61.428" y="61" textLength="184.144">当msg==null的时候return</tspan>
+      </text>
+      <path d="M 244.25 780.53525 L 256.15 780.53525 L 268 780.53525 L 268 783.8152 L 268 1002.1963 L 318.63156 1002.1963" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect x="254.53156" y="848" width="26" height="33" fill="white"/>
+      <text transform="translate(259.53156 853.5)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" fill="black" x="0" y="17" textLength="16">③</tspan>
+      </text>
+      <path d="M 736 973 L 1026.5 973 C 1030.9183 973 1034.5 976.5817 1034.5 981 L 1034.5 1023 C 1034.5 1027.4183 1030.9183 1031 1026.5 1031 L 736 1031 C 731.5817 1031 728 1027.4183 728 1023 L 728 981 C 728 976.5817 731.5817 973 736 973 Z" fill="blue"/>
+      <text transform="translate(733 992.776)" fill="white">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" fill="white" x="22.442" y="15" textLength="251.616">msg.target.dispatchMessage(msg);</tspan>
+      </text>
+      <path d="M 650 1002.0212 L 661.9 1002.0212 L 716.1 1002.0316 L 718.1 1002.0316" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect x="770" y="919" width="212" height="54" fill="white"/>
+      <text transform="translate(775 924)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" fill="black" x="69" y="17" textLength="64">消息分发</tspan>
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" fill="black" x=".408" y="39" textLength="201.184">msg.target其实就是Handler</tspan>
+      </text>
+      <path d="M 1138 973 L 1387 973 C 1391.4183 973 1395 976.5817 1395 981 L 1395 1023 C 1395 1027.4183 1391.4183 1031 1387 1031 L 1138 1031 C 1133.5817 1031 1130 1027.4183 1130 1023 L 1130 981 C 1130 976.5817 1133.5817 973 1138 973 Z" fill="blue"/>
+      <text transform="translate(1135 992.776)" fill="white">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" fill="white" x="43.484" y="15" textLength="168.032">msg.recycleUnchecked</tspan>
+      </text>
+      <path d="M 1034.5 1001.5 L 1118.1 1001.7094 L 1120.1 1001.7094" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(1230.5 945.5)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" fill="black" x="0" y="17" textLength="64">消息回收</tspan>
+      </text>
+      <path d="M 881.2598 1031 L 881.2598 1042.9 L 881.3033 1161.3552" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path d="M 736 1173 L 1037 1173 C 1041.4183 1173 1045 1176.5817 1045 1181 L 1045 1223 C 1045 1227.4183 1041.4183 1231 1037 1231 L 736 1231 C 731.5817 1231 728 1227.4183 728 1223 L 728 1181 C 728 1176.5817 731.5817 1173 736 1173 Z" fill="blue"/>
+      <text transform="translate(733 1192.776)" fill="white">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" fill="white" x="74.82" y="15" textLength="157.36">handlerMessage(msg)</tspan>
+      </text>
+      <rect x="758.25" y="1091" width="246" height="54" fill="white"/>
+      <text transform="translate(763.25 1096)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" fill="black" x="2.672" y="17" textLength="230.656">调用我们平时new Handle重写的</tspan>
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" fill="black" x="41.464" y="39" textLength="153.072">handlerMessage方法</tspan>
+      </text>
+      <text transform="translate(737.25 1178.332)" fill="white">
+        <tspan font-family="Helvetica Neue" font-size="12" font-style="italic" font-weight="500" fill="white" x="0" y="11" textLength="299.328">// Subclasses must implement this to receive messages.</tspan>
+      </text>
+      <text transform="translate(268.75 -10.153398)" fill="#666">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" fill="#666" x="0" y="17" textLength="400.688">ActivityThread中有一个系统的Handler  mH这个Handler</tspan>
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" fill="#666" x="0" y="39" textLength="530.416">用来管理组件的生命周期如：Activity的start，resume，pause，destroy等</tspan>
+      </text>
+      <line x1="233.45327" y1="98.71745" x2="425.45297" y2="43.258893" marker-end="url(#FilledArrow_Marker_2)" stroke="#aaa" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <text transform="translate(5 1268)" fill="#b1001c">
+        <tspan font-family="PingFang SC" font-size="22" font-weight="bold" fill="#b1001c" x=".454" y="23" textLength="345.092">接着再来看用户自己定义的Handler</tspan>
+      </text>
+      <path d="M 34 1499 L 228.5 1499 C 232.91828 1499 236.5 1502.5817 236.5 1507 L 236.5 1549 C 236.5 1553.4183 232.91828 1557 228.5 1557 L 34 1557 C 29.581722 1557 26 1553.4183 26 1549 L 26 1507 C 26 1502.5817 29.581722 1499 34 1499 Z" fill="blue"/>
+      <text transform="translate(31 1518.776)" fill="white">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" fill="white" x="51.074" y="15" textLength="98.352">new Handler()</tspan>
+      </text>
+      <path d="M 357 1363.5 L 587 1363.5 C 591.4183 1363.5 595 1367.0817 595 1371.5 L 595 1413.5 C 595 1417.9183 591.4183 1421.5 587 1421.5 L 357 1421.5 C 352.58172 1421.5 349 1417.9183 349 1413.5 L 349 1371.5 C 349 1367.0817 352.58172 1363.5 357 1363.5 Z" fill="blue"/>
+      <text transform="translate(354 1383.276)" fill="white">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" fill="white" x="8.728" y="15" textLength="218.544">mLooper = Looper.myLooper()</tspan>
+      </text>
+      <text transform="translate(363 1340)" fill="black">
+        <tspan font-family="PingFang SC" font-size="13" font-weight="500" x=".442" y="14" textLength="207.116">获取当前线程的Looper(消息循环器)</tspan>
+      </text>
+      <path d="M 357 1627 L 587 1627 C 591.4183 1627 595 1630.5817 595 1635 L 595 1677 C 595 1681.4183 591.4183 1685 587 1685 L 357 1685 C 352.58172 1685 349 1681.4183 349 1677 L 349 1635 C 349 1630.5817 352.58172 1627 357 1627 Z" fill="blue"/>
+      <text transform="translate(354 1646.776)" fill="white">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" fill="white" x="13.584" y="15" textLength="208.832">mQueue = mLooper.mQueue</tspan>
+      </text>
+      <path d="M 236.5 1513.374 L 248.4 1513.374 L 288.12988 1513.374 L 288.12988 1506.1993 L 287.92852 1391.864 L 337.1 1392.075 L 339.1 1392.075" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path d="M 236.5 1534.7984 L 248.4 1534.7984 L 289.0813 1534.7984 L 289.0813 1538.1948 L 289.0813 1654.9312 L 290.5059 1654.9312 L 337.1 1655.2757 L 339.1 1655.2757" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect x="275" y="1439" width="26" height="33" fill="white"/>
+      <text transform="translate(280 1444.5)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" fill="black" x="0" y="17" textLength="16">①</tspan>
+      </text>
+      <rect x="275" y="1584" width="26" height="33" fill="white"/>
+      <text transform="translate(280 1589.5)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" fill="black" x="0" y="17" textLength="16">②</tspan>
+      </text>
+      <path d="M 34 1828 L 228.5 1828 C 232.91828 1828 236.5 1831.5817 236.5 1836 L 236.5 1878 C 236.5 1882.4183 232.91828 1886 228.5 1886 L 34 1886 C 29.581722 1886 26 1882.4183 26 1878 L 26 1836 C 26 1831.5817 29.581722 1828 34 1828 Z" fill="blue"/>
+      <text transform="translate(31 1847.776)" fill="white">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" fill="white" x="46.17" y="15" textLength="108.16">sendMessage()</tspan>
+      </text>
+      <path d="M 131.24715 1557 L 131.24715 1568.9 L 131.22054 1816.1 L 131.22054 1818.1" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path d="M 324 1828 L 518.5 1828 C 522.9183 1828 526.5 1831.5817 526.5 1836 L 526.5 1878 C 526.5 1882.4183 522.9183 1886 518.5 1886 L 324 1886 C 319.58172 1886 316 1882.4183 316 1878 L 316 1836 C 316 1831.5817 319.58172 1828 324 1828 Z" fill="blue"/>
+      <text transform="translate(321 1847.776)" fill="white">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" fill="white" x="25.122" y="15" textLength="150.256">sendMessageAtTime</tspan>
+      </text>
+      <path d="M 236.5 1856.9918 L 248.4 1856.9918 L 304.1 1856.9856 L 306.1 1856.9856" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path d="M 727 1828 L 944 1828 C 948.4183 1828 952 1831.5817 952 1836 L 952 1878 C 952 1882.4183 948.4183 1886 944 1886 L 727 1886 C 722.5817 1886 719 1882.4183 719 1878 L 719 1836 C 719 1831.5817 722.5817 1828 727 1828 Z" fill="blue"/>
+      <text transform="translate(724 1847.776)" fill="white">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" fill="white" x="52.524" y="15" textLength="117.952">equeueMessage</tspan>
+      </text>
+      <path d="M 526.5 1857 L 538.4 1857 L 707.1 1857 L 709.1 1857" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect x="94.23179" y="1695.0882" width="74" height="33" fill="white"/>
+      <text transform="translate(99.23179 1700.5882)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" fill="black" x="0" y="17" textLength="64">发送消息</tspan>
+      </text>
+      <rect x="585.8296" y="1840.5" width="74" height="33" fill="white"/>
+      <text transform="translate(590.8296 1846)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" fill="black" x="0" y="17" textLength="64">消息入队</tspan>
+      </text>
+      <text transform="translate(1073 1736)" fill="black">
+        <tspan font-family="PingFang SC" font-size="14" font-weight="500" fill="black" x="17.957" y="15" textLength="198.086">将消息加入到MessageQueue中</tspan>
+        <tspan font-family="PingFang SC" font-size="14" font-weight="500" fill="black" x="3.138" y="35" textLength="227.724">让Looper（消息循环器）去循环取出</tspan>
+        <tspan font-family="PingFang SC" font-size="14" font-weight="500" fill="black" x=".233" y="55" textLength="233.534">消息交给Handler的dispatchMessage</tspan>
+        <tspan font-family="PingFang SC" font-size="14" font-weight="500" fill="black" x="82" y="75" textLength="70">方法去处理</tspan>
+      </text>
+      <text transform="translate(5 -85.23828)" fill="#b1001c">
+        <tspan font-family="PingFang SC" font-size="22" font-weight="bold" fill="#b1001c" x=".117" y="23" textLength="458.766">先看ActivityThread中的消息循环器都干了什么</tspan>
+      </text>
+      <path d="M 1076 1828 L 1293 1828 C 1297.4183 1828 1301 1831.5817 1301 1836 L 1301 1878 C 1301 1882.4183 1297.4183 1886 1293 1886 L 1076 1886 C 1071.5817 1886 1068 1882.4183 1068 1878 L 1068 1836 C 1068 1831.5817 1071.5817 1828 1076 1828 Z" fill="blue"/>
+      <text transform="translate(1073 1847.776)" fill="white">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" fill="white" x="28.068" y="15" textLength="166.864">queue.equeueMessage</tspan>
+      </text>
+      <path d="M 952 1856.9992 L 963.9 1856.9992 L 1056.1 1856.9983 L 1058.1 1856.9983" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect x="374.25" y="474" width="224" height="33" fill="white"/>
+      <text transform="translate(379.25 479.5)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" fill="black" x="11" y="17" textLength="192">获取当前线程的消息循环器</tspan>
+      </text>
+      <rect x="433.25" y="934" width="106" height="33" fill="white"/>
+      <text transform="translate(438.25 939.5)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" fill="black" x="0" y="17" textLength="96">循环取出消息</tspan>
+      </text>
+      <text transform="translate(382 1603.5)" fill="black">
+        <tspan font-family="PingFang SC" font-size="13" font-weight="500" x=".2025" y="14" textLength="179.595">获取消息队列(MessageQueue)</tspan>
+      </text>
+    </g>
+  </g>
+</svg>
