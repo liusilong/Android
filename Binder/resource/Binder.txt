@@ -1,0 +1,236 @@
+Binder
+1.服务启动，就会在内存中注册一个IBinder引用(对服务端的描述。类的信息、变量。。。)
+2.Proxy用来向IBinder写数据，Stub用来通过IBinder向Stub回调
+3.IBinder其实就是对AIDL的一个描述
+4.客户端使用AIDL接口中的Stub.asInterface(IBinder obj)来通过远程的IBinder引用创建本地IBinder对象
+	如：
+			@Override
+		    public void onServiceConnected(ComponentName name, IBinder service) {
+		//        bindService会跨进程去启动远程服务，远程服务响应后会回调客户端此方法，并将
+		//        服务端的IBinder引用传过来
+
+		//        通过远程引用创建本地对象
+		        myInterface = IMyAidlInterface.Stub.asInterface(service);
+		        Log.e(TAG, "onServiceConnected: connected success...");
+		    }
+			
+		AIDL接口内部类Stub的asInterface方法如下
+			   /**
+		         * Cast an IBinder object into an com.lsl.test.IMyAidlInterface interface,
+		         * generating a proxy if needed.
+		         */
+				 ##因为这个方法是在Activity中的bindService的回调ServiceConnection中的 onServiceConnected 方法中
+				 ##执行的，onServiceConnected中会传递IBinder引用，这里传递的IBinder引用要么是本地的，要么是远程服务的
+				 ##因为在Service启动之后，会在内存里面去注册一个IBinder引用，此时的obj就是从内存里面取出的那个IBinder引用
+		        public static com.lsl.test.IMyAidlInterface asInterface(android.os.IBinder obj) {
+		            if ((obj == null)) {
+		                return null;
+		            }
+					//查找本地引用
+		            android.os.IInterface iin = obj.queryLocalInterface(DESCRIPTOR);
+		            if (((iin != null) && (iin instanceof com.lsl.test.IMyAidlInterface))) {
+		                return ((com.lsl.test.IMyAidlInterface) iin);
+		            }
+		            return new com.lsl.test.IMyAidlInterface.Stub.Proxy(obj);
+		        }
+				
+			
+5.来看看Stub的构造方法
+		public Stub() {
+           this.attachInterface(this, DESCRIPTOR);
+       }
+
+	   因为Stub继承自Binder，所以会执行Binder中的attachInterface方法
+	   	public void attachInterface(IInterface owner, String descriptor) {
+			//将Stub本身赋值给mOwner对象
+	          mOwner = owner;
+			  //将descriptor赋值给mDescriptor
+	          mDescriptor = descriptor;
+	      }
+		  
+		当我们去调用asInterface的时候会执行 queryLocalInterface 方法，并将DESCRIPTOR传递进去
+		这里会调用IBinder的queryLocalInterface方法，又因为Binder为IBinder的实现类，所以会调用
+		Binder的queryLocalInterface 方法，如下：
+		
+		public IInterface queryLocalInterface(String descriptor) {
+				//如果描述相等，说明当前的IBinder和mOwner同进程就直接返回当前Binder对象，否则返回空
+		        if (mDescriptor.equals(descriptor)) {
+		            return mOwner;
+		        }
+		        return null;
+		    }
+		
+		
+		 
+	
+下面看看Activity中binderService的全过程，在Activity中会调用this.bindService(Intent,ServiceConnection,flag)
+首先这里的this不是指的Activity，而是Context，看这个 bindService方法就是在 Context 的实现类 ContextImpl 实现类中
+看看ContextImpl#bindService
+    @Override
+       public boolean bindService(Intent service, ServiceConnection conn,
+               int flags) {
+           warnIfCallingFromSystemProcess();
+           return bindServiceCommon(service, conn, flags, mMainThread.getHandler(),
+                   Process.myUserHandle());
+       }
+会调用bindServiceCommon这个方法，bindServiceCommon里面有这样一行代码：
+	int res = ActivityManagerNative.getDefault().bindService(
+	                mMainThread.getApplicationThread(), getActivityToken(), service,
+	                service.resolveTypeIfNeeded(getContentResolver()),
+	                sd, flags, getOpPackageName(), user.getIdentifier());
+	
+	这一这里的ActivityManagerNative类
+		public abstract class ActivityManagerNative extends Binder implements IActivityManager
+		看到这里，其实他也是个进行AIDL通信的工具，同样里面也有一个代理Proxy类
+		class ActivityManagerProxy implements IActivityManager
+		
+然后会调用ActivityManagerNative.getDefault()来看看这个是什么
+		static public IActivityManager getDefault() {
+		        return gDefault.get();
+		    }
+		再看getDefault方法
+		private static final Singleton<IActivityManager> gDefault = new Singleton<IActivityManager>() {
+		        protected IActivityManager create() {
+		            IBinder b = ServiceManager.getService("activity");
+		            if (false) {
+		                Log.v("ActivityManager", "default service binder = " + b);
+		            }
+		            IActivityManager am = asInterface(b);
+		            if (false) {
+		                Log.v("ActivityManager", "default service = " + am);
+		            }
+		            return am;
+		        }
+		    };
+		再看Singleton.get()方法干了什么
+
+			public final T get() {
+			        synchronized (this) {
+			            if (mInstance == null) {
+			                mInstance = create();
+			            }
+			            return mInstance;
+			        }
+			    }
+				
+		其实就是调用create()方法，然后上面gDefault中的create()方法里面执行的是
+			
+			##通过ServiceManager获取IActivityManager的IBinder引用
+            IBinder b = ServiceManager.getService("activity");
+            if (false) {
+                Log.v("ActivityManager", "default service binder = " + b);
+            }
+			##通过引用生成IActivityManager对象
+            IActivityManager am = asInterface(b);
+            if (false) {
+                Log.v("ActivityManager", "default service = " + am);
+            }
+            return am;
+		
+	所以呢 ActivityManagerNative.getDefault().bindService 会调用 IActivityManager.getDefault()方法
+	但是IActivityManager是一个抽象类，所以就会去调用他的实现类 ActivityManagerService 里面的getDefault()方法
+	在ActivityManagerService的getDefault方法中会调用下面代码
+    return mServices.bindServiceLocked(caller, token, service,
+                       resolvedType, connection, flags, callingPackage, userId);
+	
+	mServices 为 ActiveServices 对象，接着看ActiveServices里面的 bindServiceLocked 方法
+	会调用 requestServiceBindingLocked 方法 然后就会调用
+		r.app.thread.scheduleBindService(r, i.intent.getIntent(), rebind,
+		                        r.app.repProcState);
+	前面的 r.app.thread 是 IApplicationThread 对象，会调用它里面的 scheduleBindService 方法
+	当时 IApplicationThread 是个接口，所以要找它的实现类是ActivityThread的内部类 ApplicationThread 
+	然后就会调用 ApplicationThread 中的  scheduleBindService 方法，在这个方法里面 会给系统的Handle
+	发送消息 sendMessage(H.BIND_SERVICE, s); 然后就会调用 handleBindService 方法
+	handleBindService的源码如下
+		private void handleBindService(BindServiceData data) {
+				##获取到当前的Service
+		        Service s = mServices.get(data.token);
+		        if (DEBUG_SERVICE)
+		            Slog.v(TAG, "handleBindService s=" + s + " rebind=" + data.rebind);
+		        if (s != null) {
+		            try {
+		                data.intent.setExtrasClassLoader(s.getClassLoader());
+		                data.intent.prepareToEnterProcess();
+		                try {
+		                    if (!data.rebind) {
+								##回调Service中的onBind方法
+		                        IBinder binder = s.onBind(data.intent);
+								##发布此Service，并将binder作为参数传递
+		                        ActivityManagerNative.getDefault().publishService(
+		                                data.token, data.intent, binder);
+		                    } else {
+		                        s.onRebind(data.intent);
+		                        ActivityManagerNative.getDefault().serviceDoneExecuting(
+		                                data.token, SERVICE_DONE_EXECUTING_ANON, 0, 0);
+		                    }
+		                    ensureJitEnabled();
+		                } catch (RemoteException ex) {
+		                    throw ex.rethrowFromSystemServer();
+		                }
+		            } catch (Exception e) {
+		                if (!mInstrumentation.onException(s, e)) {
+		                    throw new RuntimeException(
+		                            "Unable to bind to service " + s
+		                            + " with " + data.intent + ": " + e.toString(), e);
+		                }
+		            }
+		        }
+		    }
+			
+
+客户端向IBinder驱动里面写数据的时候，在Proxy里面调用如下代码时
+mRemote.transact(Stub.TRANSACTION_sum, _data, _reply, 0);
+实际上调用的是Binder内部类BinderProxy里面你的transact方法
+	public boolean transact(int code, Parcel data, Parcel reply, int flags) throws RemoteException {
+	        Binder.checkParcel(this, code, data, "Unreasonably large binder buffer");
+	        if (Binder.isTracingEnabled()) { Binder.getTransactionTracker().addTrace(); }
+	        return transactNative(code, data, reply, flags);
+	    }
+从上面的代码可知，Proxy向Ibinder里面写数据是调用的Native方法 transactNative
+	public native boolean transactNative(int code, Parcel data, Parcel reply,
+	            int flags) throws RemoteException;
+这个方法实际上是将客户端数据通过NDK写到底层的IBinder驱动里面去
+底层接受到数据之后就会回调服务端（Stub）的onTransact方法
+将数据处理完之后写到reply里面去
+
+
+还有一个问题，就是当所有Service启动之后都会注册一个IBinder引用到共享内存里面去，是在哪注册的呢？
+看代码：
+	通常我们在服务端都会这样创建一个服务
+		class IMyAIDLInterfaceImpl extends IMyAidlInterface.Stub {
+
+		        @Override
+		        public void sum(int a, int b) throws RemoteException {
+		            Log.e(TAG, "from Service sum: " + (a + b));
+		        }
+		    }
+			
+	然后在Service的onCreate里面去实例化这个服务
+	    @Override
+	       public void onCreate() {
+	           super.onCreate();
+	           binder = new IMyAIDLInterfaceImpl();
+
+	       }
+	在初始化这个服务的时候，就会调用Stub的构造方法，而Stub又是继承自Binder的
+	所以会先执行Binder的构造方法
+	    public Binder() {
+	           init();
+			   ##省略的代码
+			   .
+			   .
+	       }
+	在Binder的构造方法里面会执行init方法
+		private native final void init();
+	然后init方法是一个naive方法，所以就是在这个native方法
+	里面将这个服务注册到共享内存里面去的
+	
+	
+		
+		  
+		  
+		  
+		  
+		  
+		  
+		  

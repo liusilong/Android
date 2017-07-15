@@ -1,0 +1,5 @@
+## Binder使用分析
++ Binder.txt是binderService和IBinder驱动写数据的流程分析
++ BinderClassDiagram.png是binderService整个过程中使用到的类图
++ bindServiceSequenceDiagram.png是bindService整个过程调用的时序图
++ StubAndProxySequenceDiagram.png是AIDL接口向本地和服务端读写数据的时序图
